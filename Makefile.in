@@ -66,8 +66,8 @@ lib_install: libbr.a br_cmd.h br_cmd_engine.h
 	${INSTALL} -d -m 755 ${libdir}
 	${INSTALL} -d -m 744 ${includedir}
 	${INSTALL} -m 644 libbr.a ${libdir}
-	${INSTALL} -m 644 br_cmd.h ${includedir}
-	${INSTALL} -m 644 br_cmd_engine.h ${includedir}
+	${INSTALL} -m 644 ${srcdir}/br_cmd.h ${includedir}
+	${INSTALL} -m 644 ${srcdir}/br_cmd_engine.h ${includedir}
 
 clean:
 	-rm -f *.o *.a br core
